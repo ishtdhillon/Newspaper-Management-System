@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="494.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx.jdbcc.JdbcController">
+   <children>
+      <Label layoutX="183.0" layoutY="22.0" prefHeight="31.0" prefWidth="286.0" text="Employees Data Manager" textAlignment="JUSTIFY">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff08" height="322.0" layoutX="86.0" layoutY="63.0" stroke="BLACK" strokeType="INSIDE" width="416.0" />
+      <Label layoutX="132.0" layoutY="132.0" prefHeight="18.0" prefWidth="50.0" text="Name" />
+      <Label layoutX="132.0" layoutY="91.0" prefHeight="18.0" prefWidth="50.0" text="EID" />
+      <Label layoutX="125.0" layoutY="262.0" prefHeight="18.0" prefWidth="64.0" text="Upload Pic" />
+      <Label layoutX="132.0" layoutY="217.0" prefHeight="18.0" prefWidth="50.0" text="DOB" />
+      <Label layoutX="132.0" layoutY="177.0" prefHeight="18.0" prefWidth="50.0" text="Age" />
+      <ComboBox fx:id="comboeid" editable="true" layoutX="218.0" layoutY="88.0" prefWidth="150.0" />
+      <TextField fx:id="txtname" layoutX="220.0" layoutY="129.0" />
+      <TextField fx:id="txtage" layoutX="220.0" layoutY="174.0" />
+      <DatePicker fx:id="dob" layoutX="219.0" layoutY="213.0" prefHeight="26.0" prefWidth="161.0" />
+      <ImageView fx:id="previmg" fitHeight="93.0" fitWidth="103.0" layoutX="220.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="btnbrowser" layoutX="246.0" layoutY="353.0" mnemonicParsing="false" onAction="#doBrowse" text="Browser" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff03" height="53.0" layoutX="89.0" layoutY="394.0" stroke="BLACK" strokeType="INSIDE" width="416.0" />
+      <Button layoutX="106.0" layoutY="408.0" mnemonicParsing="false" onAction="#doSave" text="Save" />
+      <Button layoutX="209.0" layoutY="408.0" mnemonicParsing="false" onAction="#doUpdate" text="Update" />
+      <Button layoutX="326.0" layoutY="408.0" mnemonicParsing="false" onAction="#doDelete" text="Delete" />
+      <Button layoutX="418.0" layoutY="408.0" mnemonicParsing="false" onAction="#doClear" text="Clear" />
+      <Button layoutX="409.0" layoutY="88.0" mnemonicParsing="false" onAction="#doFind" text="Find" />
+   </children>
+</AnchorPane>

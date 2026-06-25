@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="653.0" prefWidth="752.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx.customers.CustomersController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1b36bc" height="47.0" stroke="BLACK" strokeType="INSIDE" width="752.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f4f500" height="401.0" layoutX="27.0" layoutY="154.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" width="699.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f4f504" height="67.0" layoutX="27.0" layoutY="565.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" width="699.0" />
+      <Label layoutX="233.0" layoutY="71.0" text="CUSTOMER ENROLLMENT BOARD">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="64.0" layoutY="180.0" text="Mobile Number">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="427.0" layoutY="228.0" text="Date of Start">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="76.0" layoutY="279.0" text="Address">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="75.0" layoutY="228.0" text="Email ID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="448.0" layoutY="181.0" text="Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtmob" layoutX="170.0" layoutY="178.0" />
+      <TextField fx:id="txtname" layoutX="530.0" layoutY="177.0" />
+      <TextField fx:id="txtemail" layoutX="171.0" layoutY="225.0" />
+      <TextField fx:id="txtaddr" layoutX="172.0" layoutY="276.0" prefHeight="26.0" prefWidth="464.0" />
+      <DatePicker fx:id="dos" layoutX="529.0" layoutY="225.0" prefHeight="26.0" prefWidth="150.0" />
+      <Label layoutX="87.0" layoutY="340.0" text="Areas">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="580.0" layoutY="393.0" text="Selected Prices">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="427.0" layoutY="393.0" text="Selected Papers">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="239.0" layoutY="393.0" text="Prices">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="87.0" layoutY="393.0" text="Papers">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="434.0" layoutY="340.0" text="Hawker IDs">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ListView fx:id="listPaper" layoutX="60.0" layoutY="413.0" onMouseClicked="#doadd" prefHeight="126.0" prefWidth="105.0" />
+      <ListView fx:id="listSelPrice" layoutX="573.0" layoutY="413.0" prefHeight="126.0" prefWidth="105.0" />
+      <ListView fx:id="listSelPaper" layoutX="423.0" layoutY="413.0" onMouseClicked="#doDelete" prefHeight="126.0" prefWidth="105.0" />
+      <ListView fx:id="listPrice" layoutX="204.0" layoutY="413.0" prefHeight="126.0" prefWidth="105.0" />
+      <ComboBox fx:id="comboar" layoutX="170.0" layoutY="338.0" onAction="#doFillHawkerid" prefWidth="150.0" />
+      <ComboBox fx:id="combohid" layoutX="537.0" layoutY="337.0" prefWidth="150.0" />
+      <Button layoutX="336.0" layoutY="177.0" mnemonicParsing="false" onAction="#doFind" text="FIND">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="565.0" layoutY="583.0" mnemonicParsing="false" onAction="#doEdit" text="EDIT">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="374.0" layoutY="583.0" mnemonicParsing="false" onAction="#doRemove" text="REMOVE CUSTOMER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="185.0" layoutY="583.0" mnemonicParsing="false" onAction="#doEnroll" text="ENROLL CUSTOMER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="96.0" layoutY="583.0" mnemonicParsing="false" onAction="#CreateNew" text="NEW">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="96.0" fitWidth="136.0" layoutX="33.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@enroll.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

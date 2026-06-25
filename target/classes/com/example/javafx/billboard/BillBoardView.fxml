@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="499.0" prefWidth="662.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx.billboard.BillBoardController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f7f9fa00" height="386.0" layoutX="14.0" layoutY="98.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" width="633.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#103ca1" height="44.0" stroke="BLACK" strokeType="INSIDE" width="662.0" />
+      <Label layoutX="263.0" layoutY="64.0" text="BILLING BOARD">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="117.0" text="Start Date">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="469.0" layoutY="117.0" text="Bill Status">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="263.0" layoutY="117.0" text="End Date">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="startdate" layoutX="39.0" layoutY="140.0" prefHeight="26.0" prefWidth="149.0" />
+      <DatePicker fx:id="enddate" layoutX="263.0" layoutY="140.0" prefHeight="26.0" prefWidth="150.0" />
+      <TableView fx:id="tblview" layoutX="39.0" layoutY="241.0" prefHeight="200.0" prefWidth="580.0" />
+      <Button layoutX="203.0" layoutY="198.0" mnemonicParsing="false" onAction="#doFetch" text="FETCH">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="combobill" layoutX="469.0" layoutY="141.0" prefWidth="150.0" />
+      <Button layoutX="413.0" layoutY="198.0" mnemonicParsing="false" onAction="#doClear" text="CLEAR">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="602.0" prefWidth="739.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx.customerboard.CustomerBoardController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#11318e" height="42.0" stroke="BLACK" strokeType="INSIDE" width="746.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fcfeff00" height="470.0" layoutX="22.0" layoutY="111.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" width="703.0" />
+      <Label layoutX="291.0" layoutY="59.0" text="CUSTOMER BOARD">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="138.0" text="Areas">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="538.0" layoutY="138.0" text="Hawkers">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="297.0" layoutY="138.0" text="Papers">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboarea" layoutX="52.0" layoutY="158.0" prefWidth="150.0" />
+      <ComboBox fx:id="combohawker" layoutX="538.0" layoutY="158.0" prefWidth="150.0" />
+      <ComboBox fx:id="combopaper" layoutX="297.0" layoutY="158.0" prefWidth="150.0" />
+      <Button layoutX="210.0" layoutY="220.0" mnemonicParsing="false" onAction="#doShow" text="SHOW DATA">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tblview" layoutX="52.0" layoutY="275.0" prefHeight="244.0" prefWidth="640.0" />
+      <Button layoutX="432.0" layoutY="220.0" mnemonicParsing="false" onAction="#doClear" text=" CLEAR FORM">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

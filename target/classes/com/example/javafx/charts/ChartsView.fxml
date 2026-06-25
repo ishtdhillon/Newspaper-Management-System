@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx.charts.ChartsController">
+   <children>
+      <PieChart fx:id="chartid" layoutY="109.0" prefHeight="391.0" prefWidth="350.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#103ca1" height="44.0" stroke="BLACK" strokeType="INSIDE" width="700.0" />
+      <Label layoutX="290.0" layoutY="61.0" text="Areas Covered">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <PieChart fx:id="chartid1" layoutX="350.0" layoutY="109.0" prefHeight="391.0" prefWidth="350.0" />
+   </children>
+</AnchorPane>

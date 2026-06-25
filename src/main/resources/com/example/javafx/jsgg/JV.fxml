@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="628.0" prefWidth="623.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx.jsg.JC">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f7fafc" height="170.0" layoutX="163.0" layoutY="31.0" stroke="BLACK" strokeType="INSIDE" width="379.0" />
+      <Label layoutX="175.0" layoutY="62.0" prefHeight="35.0" prefWidth="100.0" text="enter a">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="175.0" layoutY="131.0" prefHeight="35.0" prefWidth="100.0" text="enter b">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txta" layoutX="295.0" layoutY="67.0" />
+      <TextField fx:id="txtb" layoutX="296.0" layoutY="136.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f5f9fc" height="70.0" layoutX="163.0" layoutY="237.0" stroke="BLACK" strokeType="INSIDE" width="379.0" />
+      <Button layoutX="176.0" layoutY="259.0" mnemonicParsing="false" onAction="#dosum" prefHeight="26.0" prefWidth="69.0" text="sum" />
+      <Button layoutX="261.0" layoutY="259.0" mnemonicParsing="false" onAction="#domulti" prefHeight="26.0" prefWidth="120.0" text="multiply" />
+      <Button layoutX="408.0" layoutY="258.0" mnemonicParsing="false" onAction="#dosaaf" prefHeight="26.0" prefWidth="78.0" text="clear" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f7fbff" height="154.0" layoutX="163.0" layoutY="343.0" stroke="BLACK" strokeType="INSIDE" width="379.0" />
+      <Label layoutX="175.0" layoutY="436.0" prefHeight="35.0" prefWidth="100.0" text="MULTIPLY">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="175.0" layoutY="368.0" prefHeight="35.0" prefWidth="100.0" text="SUM">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtsum" layoutX="296.0" layoutY="373.0" />
+      <TextField fx:id="txtmulti" layoutX="296.0" layoutY="441.0" />
+      <ImageView fitHeight="86.0" fitWidth="150.0" layoutX="7.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@133853218816447975.jpg" />
+         </image>
+      </ImageView>
+      <CheckBox fx:id="chkdsa" layoutX="38.0" layoutY="237.0" mnemonicParsing="false" text="DSA">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="chkjava" layoutX="39.0" layoutY="285.0" mnemonicParsing="false" text="JAVA">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="chkmern" layoutX="40.0" layoutY="343.0" mnemonicParsing="false" text="MERN">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </CheckBox>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f7f7f7" height="61.0" layoutX="161.0" layoutY="514.0" stroke="BLACK" strokeType="INSIDE" width="387.0" />
+      <TextField fx:id="tot" layoutX="296.0" layoutY="531.0" />
+      <Button layoutX="185.0" layoutY="532.0" mnemonicParsing="false" onAction="#dototal" text="total" />
+   </children>
+</AnchorPane>
