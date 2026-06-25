@@ -111,30 +111,18 @@ The application is designed for newspaper agencies to efficiently handle daily o
 
 ## Project Structure
 
-Admin Login
-    |
-    v
-Dashboard
-├── Paper Master
-├── Area Master
-├── Hawker Master
-├── Customer Enrollment
-├── Bill Generator
-├── Bill Board
-├── Bill Collector
-├── Customer Board
-└── Charts Dashboard
-
-
-## Database Modules
-
-* Newspaper Management
-* Area Management
-* Hawker Management
-* Customer Management
-* Billing Management
-* Payment Management
-* Reporting and Analytics
+1. Admin Login
+  
+2. Dashboard
+   a. Paper Master
+   b. Area Master
+   c. Hawker Master
+   d. Customer Enrollment
+   e. Bill Generator
+   f. Bill Board
+   g. Bill Collector
+   h. Customer Board
+   i. Charts Dashboard
 
 
 ## How to Run the Project
